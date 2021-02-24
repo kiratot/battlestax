@@ -1,6 +1,7 @@
 const { createClient } = require("@astrajs/collections");
 
 exports.handler = async (event, context) => {
+    //just adding some comments
   let gameId;
   let gamePayload;
   try {
