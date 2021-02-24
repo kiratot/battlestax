@@ -3,13 +3,14 @@ const faker = require("faker");
 
 const gameId = faker.helpers.replaceSymbols("????");
 
+//just add some comments
 it("should create a game document", async () => {
   const response = await insertGame.handler({
     path: "/functions/insertGame/" + gameId,
     body: '{"user":"me"}',
   });
   expect(response.statusCode).toBe(200);
-}, 10000);
+}, 30000);
 
 it("shouldn't create a game document without a game id", async () => {
   const response = await insertGame.handler({ path: "insertGame" });
