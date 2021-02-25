@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { selectGame, createGame } from "../../../store/gameSlice";
 
 export default function NewGame() {
-  // let's connect Redux to our Component
+
 const dispatch = useDispatch()
 const {id, idError, idLoading} = useSelector(selectGame)
   return (
